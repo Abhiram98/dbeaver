@@ -270,7 +270,6 @@ public class OracleServerSession extends AbstractServerSession {
     }
 
     @Override
-    @Property
     public String getSessionId() {
         String sessionId = sid + "," + serial;
         if (instId != 0 && instId != 1) {

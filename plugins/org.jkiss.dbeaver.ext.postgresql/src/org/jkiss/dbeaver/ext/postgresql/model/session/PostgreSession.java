@@ -141,7 +141,6 @@ public class PostgreSession extends AbstractServerSession {
     }
 
     @Override
-    @Property
     public String getSessionId() {
         return String.valueOf(pid);
     }

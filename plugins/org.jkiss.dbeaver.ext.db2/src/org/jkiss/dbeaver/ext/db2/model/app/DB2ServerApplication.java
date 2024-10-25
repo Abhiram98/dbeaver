@@ -96,7 +96,6 @@ public class DB2ServerApplication extends AbstractServerSession {
     }
 
     @Override
-    @Property
     public String getSessionId() {
         return agentId.toString();
     }

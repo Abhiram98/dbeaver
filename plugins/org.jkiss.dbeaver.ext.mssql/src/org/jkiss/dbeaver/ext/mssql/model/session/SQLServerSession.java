@@ -219,7 +219,6 @@ public class SQLServerSession extends AbstractServerSession {
     }
 
     @Override
-    @Property
     public String getSessionId() {
         return String.valueOf(id);
     }

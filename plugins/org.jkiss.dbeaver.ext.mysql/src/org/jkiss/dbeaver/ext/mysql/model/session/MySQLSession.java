@@ -143,7 +143,6 @@ public class MySQLSession extends AbstractServerSession {
     }
 
     @Override
-    @Property
     public String getSessionId() {
         return String.valueOf(pid);
     }
