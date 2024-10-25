@@ -8,7 +8,10 @@ Require-Bundle: org.jkiss.dbeaver.model.sql,
  org.jkiss.dbeaver.model.lsm,
  org.jkiss.bundle.antlr4,
  org.junit,
- org.mockito.mockito-core
+ org.mockito.mockito-core,
+ org.apache.felix.scr,
+ net.bytebuddy.byte-buddy,
+ net.bytebuddy.byte-buddy-agent
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: DBeaver Corp
