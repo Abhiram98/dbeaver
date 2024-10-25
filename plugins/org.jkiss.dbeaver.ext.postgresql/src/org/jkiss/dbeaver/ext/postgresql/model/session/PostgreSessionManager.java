@@ -30,6 +30,7 @@ import org.jkiss.dbeaver.model.exec.jdbc.JDBCSession;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -78,9 +79,8 @@ public class PostgreSessionManager implements DBAServerSessionManager<PostgreSes
     public void alterSession(@NotNull DBCSession session, @NotNull String sessionId, @NotNull Map<String, Object> options) throws DBException
     {
         try {
-            try (PreparedStatement dbStat = ((JDBCSession) session).prepareStatement("SELECT pg_catalog.pg_terminate_backend(?)")) {
-                dbStat.setString(1, sessionId);
-                dbStat.execute();
+            try (Statement dbStat = ((JDBCSession) session).createStatement()) {
+                dbStat.execute("SELECT pg_catalog.pg_terminate_backend(" + sessionId + ")");
             }
         }
         catch (SQLException e) {

@@ -32,6 +32,7 @@ import org.jkiss.utils.CommonUtils;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -81,9 +82,8 @@ public class SQLServerSessionManager implements DBAServerSessionManager<SQLServe
     public void alterSession(@NotNull DBCSession session, @NotNull String sessionId, @NotNull Map<String, Object> options) throws DBException
     {
         try {
-            try (PreparedStatement dbStat = ((JDBCSession) session).prepareStatement("KILL ?")) {
-                dbStat.setString(1, sessionId);
-                dbStat.execute();
+            try (Statement dbStat = ((JDBCSession) session).createStatement()) {
+                dbStat.execute("KILL " + sessionId + "");
             }
         }
         catch (SQLException e) {
