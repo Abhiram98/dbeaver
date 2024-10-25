@@ -78,11 +78,11 @@ public class SQLServerSessionManager implements DBAServerSessionManager<SQLServe
     }
 
     @Override
-    public void alterSession(@NotNull DBCSession session, @NotNull SQLServerSession sessionType, @NotNull Map<String, Object> options) throws DBException
+    public void alterSession(@NotNull DBCSession session, @NotNull String sessionId, @NotNull Map<String, Object> options) throws DBException
     {
         try {
             try (Statement dbStat = ((JDBCSession) session).createStatement()) {
-                dbStat.execute("KILL " + sessionType.getId() + "");
+                dbStat.execute("KILL " + sessionId + "");
             }
         }
         catch (SQLException e) {

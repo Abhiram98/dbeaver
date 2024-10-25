@@ -17,7 +17,6 @@
 package org.jkiss.dbeaver.ext.oracle.model.session;
 
 import org.jkiss.code.NotNull;
-import org.jkiss.code.Nullable;
 import org.jkiss.dbeaver.DBDatabaseException;
 import org.jkiss.dbeaver.DBException;
 import org.jkiss.dbeaver.ext.oracle.internal.OracleMessages;
@@ -83,7 +82,7 @@ public class OracleServerSessionManager implements DBAServerSessionManager<Oracl
     }
 
     @Override
-    public void alterSession(@NotNull DBCSession session, @NotNull OracleServerSession sessionType, @NotNull Map<String, Object> options) throws DBException
+    public void alterSession(@NotNull DBCSession session, @NotNull String sessionId, @NotNull Map<String, Object> options) throws DBException
     {
         final boolean toKill = Boolean.TRUE.equals(options.get(PROP_KILL_SESSION));
         final boolean immediate = Boolean.TRUE.equals(options.get(PROP_IMMEDIATE));
@@ -95,12 +94,7 @@ public class OracleServerSessionManager implements DBAServerSessionManager<Oracl
             } else {
                 sql.append("DISCONNECT SESSION ");
             }
-            sql.append("'").append(sessionType.getSid()).append(',').append(sessionType.getSerial());
-            if (sessionType.getInstId() != 0 && sessionType.getInstId() != 1) {
-                // INSET_ID = 1 is hardcoded constant, means no RAC
-                sql.append(",@").append(sessionType.getInstId());
-            }
-            sql.append("'");
+            sql.append("'").append(sessionId).append("'");
             if (immediate) {
                 sql.append(" IMMEDIATE");
             } else if (!toKill) {

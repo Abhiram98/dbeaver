@@ -109,17 +109,17 @@ public class OracleServerSession extends AbstractServerSession {
 
     }
 
-    @Property(category = CAT_SESSION, viewable = false, order = 1, features = "sessionManager")
+    @Property(category = CAT_SESSION, viewable = false, order = 1)
     public long getInstId() {
         return instId;
     }
 
-    @Property(category = CAT_SESSION, viewable = true, order = 2, features = "sessionManager")
+    @Property(category = CAT_SESSION, viewable = true, order = 2)
     public long getSid() {
         return sid;
     }
 
-    @Property(category = CAT_SESSION, viewable = false, order = 3, features = "sessionManager")
+    @Property(category = CAT_SESSION, viewable = false, order = 3)
     public long getSerial() {
         return serial;
     }
@@ -267,6 +267,16 @@ public class OracleServerSession extends AbstractServerSession {
     @Override
     public Object getActiveQueryId() {
         return sqlId;
+    }
+
+    @Override
+    @Property(category = CAT_SESSION, features = "sessionId")
+    public String getSessionId() {
+        String sessionId = sid + "," + serial;
+        if (instId != 0 && instId != 1) {
+            sessionId += ",@" + instId;
+        }
+        return sessionId;
     }
 
     @Override

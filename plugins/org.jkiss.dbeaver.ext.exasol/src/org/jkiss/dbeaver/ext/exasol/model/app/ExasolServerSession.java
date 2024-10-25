@@ -92,7 +92,13 @@ public class ExasolServerSession extends AbstractServerSession {
         return sqlText;
     }
 
-    @Property(viewable = true, editable = false, order = 1, features = "sessionManager")
+    @Override
+    @Property(features = "sessionId")
+    public String getSessionId() {
+        return String.valueOf(sessionID);
+    }
+
+    @Property(viewable = true, editable = false, order = 1)
     public BigDecimal getSessionID() {
         return sessionID;
     }

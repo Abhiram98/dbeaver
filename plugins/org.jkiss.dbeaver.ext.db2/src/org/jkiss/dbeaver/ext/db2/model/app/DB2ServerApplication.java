@@ -96,6 +96,12 @@ public class DB2ServerApplication extends AbstractServerSession {
     }
 
     @Override
+    @Property(features = "sessionId")
+    public String getSessionId() {
+        return agentId.toString();
+    }
+
+    @Override
     public String toString()
     {
         return agentId.toString();
@@ -110,7 +116,7 @@ public class DB2ServerApplication extends AbstractServerSession {
         return applicationId;
     }
 
-    @Property(viewable = true, editable = false, order = 2, features = "sessionManager")
+    @Property(viewable = true, editable = false, order = 2)
     public Long getAgentId()
     {
         return agentId;

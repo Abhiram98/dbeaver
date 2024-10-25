@@ -93,7 +93,7 @@ public class MySQLSession extends AbstractServerSession {
         }
     }
 
-    @Property(viewable = true, order = 1, features = "sessionManager")
+    @Property(viewable = true, order = 1, features = "sessionId")
     public long getPid()
     {
         return pid;
@@ -140,6 +140,12 @@ public class MySQLSession extends AbstractServerSession {
     public String getActiveQuery()
     {
         return info;
+    }
+
+    @Override
+    @Property(features = "sessionId")
+    public String getSessionId() {
+        return String.valueOf(pid);
     }
 
     @Property(category = CAT_PERFORMANCE, visibleIf = PerformanceReadingValueValidator.class, order = 9)

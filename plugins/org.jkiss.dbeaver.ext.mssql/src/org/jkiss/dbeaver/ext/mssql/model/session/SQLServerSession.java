@@ -96,7 +96,7 @@ public class SQLServerSession extends AbstractServerSession {
         sqlText = JDBCUtils.safeGetString(dbResult, "sql_text");
     }
 
-    @Property(viewable = true, order = 1, features = "sessionManager")
+    @Property(viewable = true, order = 1)
     public long getId() {
         return id;
     }
@@ -216,6 +216,12 @@ public class SQLServerSession extends AbstractServerSession {
     public String getActiveQuery()
     {
         return sqlText;
+    }
+
+    @Override
+    @Property(features = "sessionId")
+    public String getSessionId() {
+        return String.valueOf(id);
     }
 
     @Override
