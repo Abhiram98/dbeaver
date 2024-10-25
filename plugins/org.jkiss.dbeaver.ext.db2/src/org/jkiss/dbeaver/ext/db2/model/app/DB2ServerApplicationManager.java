@@ -77,12 +77,6 @@ public class DB2ServerApplicationManager implements DBAServerSessionManager<DB2S
         }
     }
 
-    @Override
-    @NotNull
-    public Class<DB2ServerApplication> getSessionType() {
-        return DB2ServerApplication.class;
-    }
-
     @NotNull
     @Override
     public Map<String, Object> getTerminateOptions() {

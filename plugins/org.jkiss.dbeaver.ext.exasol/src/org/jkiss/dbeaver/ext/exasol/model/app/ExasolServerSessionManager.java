@@ -94,12 +94,6 @@ public class ExasolServerSessionManager implements DBAServerSessionManager<Exaso
 
     }
 
-    @Override
-    @NotNull
-    public Class<ExasolServerSession> getSessionType() {
-        return ExasolServerSession.class;
-    }
-
     @NotNull
     @Override
     public Map<String, Object> getTerminateOptions() {

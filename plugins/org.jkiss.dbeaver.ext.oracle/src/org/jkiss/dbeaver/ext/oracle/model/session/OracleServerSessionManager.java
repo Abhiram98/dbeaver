@@ -111,12 +111,6 @@ public class OracleServerSessionManager implements DBAServerSessionManager<Oracl
 
     @NotNull
     @Override
-    public Class<OracleServerSession> getSessionType() {
-        return OracleServerSession.class;
-    }
-
-    @NotNull
-    @Override
     public Map<String, Object> getTerminateOptions() {
         return Map.of(OracleServerSessionManager.PROP_KILL_SESSION, true);
     }

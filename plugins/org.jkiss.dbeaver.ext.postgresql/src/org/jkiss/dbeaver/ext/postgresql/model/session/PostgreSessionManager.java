@@ -30,7 +30,6 @@ import org.jkiss.dbeaver.model.exec.jdbc.JDBCSession;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -87,12 +86,6 @@ public class PostgreSessionManager implements DBAServerSessionManager<PostgreSes
         catch (SQLException e) {
             throw new DBDatabaseException(e, session.getDataSource());
         }
-    }
-
-    @NotNull
-    @Override
-    public Class<PostgreSession> getSessionType() {
-        return PostgreSession.class;
     }
 
     @NotNull

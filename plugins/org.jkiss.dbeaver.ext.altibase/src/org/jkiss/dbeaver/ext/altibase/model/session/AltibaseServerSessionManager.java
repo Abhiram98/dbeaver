@@ -85,12 +85,6 @@ public class AltibaseServerSessionManager implements DBAServerSessionManager<Alt
         }
     }
 
-    @Override
-    @NotNull
-    public Class<AltibaseServerSession> getSessionType() {
-        return AltibaseServerSession.class;
-    }
-
     @NotNull
     @Override
     public Map<String, Object> getTerminateOptions() {

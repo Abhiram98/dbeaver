@@ -41,13 +41,6 @@ public interface DBAServerSessionManager<SESSION_TYPE extends DBAServerSession> 
         throws DBException;
 
     /**
-     * Returns the type of session associated with this class.
-     * @return a class object representing the session type associated with this class
-     */
-    @NotNull
-    Class<SESSION_TYPE> getSessionType();
-
-    /**
      * Returns the options for terminating sessions.
      * @return map containing session termination options, with option keys and their corresponding values
      */
