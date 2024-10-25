@@ -93,7 +93,7 @@ public class MySQLSession extends AbstractServerSession {
         }
     }
 
-    @Property(viewable = true, order = 1, features = "sessionId")
+    @Property(viewable = true, order = 1)
     public long getPid()
     {
         return pid;
@@ -143,7 +143,7 @@ public class MySQLSession extends AbstractServerSession {
     }
 
     @Override
-    @Property(features = "sessionId")
+    @Property
     public String getSessionId() {
         return String.valueOf(pid);
     }

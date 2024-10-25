@@ -65,7 +65,7 @@ public class PostgreSession extends AbstractServerSession {
         this.appName = JDBCUtils.safeGetStringTrimmed(dbResult, "application_name");
     }
 
-    @Property(viewable = true, order = 1, features = "sessionId")
+    @Property(viewable = true, order = 1)
     public int getPid()
     {
         return pid;
@@ -141,6 +141,7 @@ public class PostgreSession extends AbstractServerSession {
     }
 
     @Override
+    @Property
     public String getSessionId() {
         return String.valueOf(pid);
     }

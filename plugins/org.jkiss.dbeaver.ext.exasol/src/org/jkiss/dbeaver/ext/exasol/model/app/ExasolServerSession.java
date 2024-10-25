@@ -93,7 +93,7 @@ public class ExasolServerSession extends AbstractServerSession {
     }
 
     @Override
-    @Property(features = "sessionId")
+    @Property
     public String getSessionId() {
         return String.valueOf(sessionID);
     }
