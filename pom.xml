@@ -29,7 +29,6 @@
 
     <modules>
         <module>plugins</module>
-        <module>plugins-dev</module>
         <module>features</module>
     </modules>
 
