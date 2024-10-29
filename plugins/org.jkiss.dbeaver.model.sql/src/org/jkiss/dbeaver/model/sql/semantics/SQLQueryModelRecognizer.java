@@ -700,7 +700,7 @@ public class SQLQueryModelRecognizer {
 
     @NotNull
     private SQLQueryValueExpression collectValueReferenceExpression(@NotNull STMTreeNode node) {
-        STMTreeNode head = node.getStmChild(0);
+        STMTreeNode head = getFirstStmChild(node);
         SQLQueryValueExpression expr = switch (head.getNodeKindId()) {
             case SQLStandardParser.RULE_columnReference -> {
                 SQLQueryQualifiedName tableName = collectTableName(head.getStmChild(0));
@@ -745,6 +745,11 @@ public class SQLQueryModelRecognizer {
         }
         
         return expr;
+    }
+
+    private STMTreeNode getFirstStmChild(STMTreeNode node) {
+        STMTreeNode head = node.getStmChild(0);
+        return head;
     }
 
     /**
