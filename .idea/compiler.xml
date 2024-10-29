@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="org.jkiss.dbeaver.ui.search" />
+        <module name="org.jkiss.dbeaver.ext.exasol.ui" />
+        <module name="org.jkiss.dbeaver.ui.statistics" />
+        <module name="org.jkiss.dbeaver.ext.teradata" />
+        <module name="org.jkiss.dbeaver.ext.db2.i" />
+        <module name="org.jkiss.dbeaver.team.git.ui" />
+        <module name="org.jkiss.dbeaver.ext.ai.feature" />
+        <module name="org.jkiss.dbeaver.ext.mysql.ui" />
+        <module name="org.jkiss.dbeaver.ce.feature" />
+        <module name="org.jkiss.dbeaver.appstore.feature" />
+        <module name="org.jkiss.dbeaver.debug.ui" />
+        <module name="org.jkiss.dbeaver.erd.ui" />
+        <module name="org.jkiss.dbeaver.ext.clickhouse.ui" />
+        <module name="org.jkiss.dbeaver.ext.snowflake.ui" />
+        <module name="org.jkiss.dbeaver.ui.feature" />
+        <module name="org.jkiss.dbeaver.model.jdbc" />
+        <module name="org.jkiss.dbeaver.ui.editors.image" />
+        <module name="org.jkiss.dbeaver.standalone.feature" />
+        <module name="org.jkiss.dbeaver.ui.navigator" />
+        <module name="org.jkiss.dbeaver.launcher" />
+        <module name="org.jkiss.dbeaver.ui.macos" />
+        <module name="org.jkiss.dbeaver.ui.editors.connection" />
+        <module name="org.jkiss.dbeaver.ext.snowflake.core" />
+        <module name="org.jkiss.dbeaver.ext.bigquery" />
+        <module name="org.jkiss.dbeaver.ext.oracle.ui" />
+        <module name="standalone" />
+        <module name="org.jkiss.dbeaver.model.event" />
+        <module name="org.jkiss.dbeaver.ce.ai.updateSite" />
+        <module name="org.jkiss.dbeaver.tasks.ui" />
+        <module name="org.jkiss.dbeaver.ext.gaussdb" />
+        <module name="org.jkiss.dbeaver.ext.greenplum" />
+        <module name="org.jkiss.dbeaver.ui.editors.sql" />
+        <module name="org.jkiss.dbeaver.registry" />
+        <module name="org.jkiss.dbeaver.cmp.simple.ui" />
+        <module name="org.jkiss.dbeaver.ext.phoenix" />
+        <module name="org.jkiss.dbeaver.ext.oracle" />
+        <module name="org.jkiss.dbeaver.ext.dameng" />
+        <module name="org.jkiss.dbeaver.ext.athena.ui" />
+        <module name="org.jkiss.dbeaver.ext.denodo" />
+        <module name="org.jkiss.dbeaver.ui.editors.sql.terminal" />
+        <module name="org.jkiss.dbeaver.ext.ocient" />
+        <module name="org.jkiss.dbeaver.ext.hive" />
+        <module name="org.jkiss.dbeaver.ext.tidb.ui" />
+        <module name="org.jkiss.dbeaver.app.local.feature" />
+        <module name="org.jkiss.dbeaver.ext.kognitio" />
+        <module name="org.jkiss.dbeaver.ext.format.sqlworkbenchj" />
+        <module name="org.jkiss.dbeaver.ui.charts" />
+        <module name="org.jkiss.dbeaver.ext.datavirtuality" />
+        <module name="org.jkiss.dbeaver.team.git" />
+        <module name="org.jkiss.dbeaver.ide.feature" />
+        <module name="org.jkiss.dbeaver.ext.db2.ui" />
+        <module name="org.jkiss.dbeaver.ext.hana.ui" />
+        <module name="org.jkiss.dbeaver.ext.hana" />
+        <module name="org.jkiss.dbeaver.dpi.model" />
+        <module name="org.jkiss.dbeaver.model.dashboard" />
+        <module name="org.jkiss.dbeaver.model" />
+        <module name="org.jkiss.dbeaver.ext.spanner.ui" />
+        <module name="org.jkiss.dbeaver.ext.trino" />
+        <module name="org.jkiss.dbeaver.net.ssh.ui" />
+        <module name="org.jkiss.dbeaver.erd.model" />
+        <module name="org.jkiss.dbeaver.model.lsm" />
+        <module name="org.jkiss.dbeaver.ext.postgresql.ui" />
+        <module name="org.jkiss.dbeaver.model.sm" />
+        <module name="org.jkiss.dbeaver.ui.extra.feature" />
+        <module name="org.jkiss.dbeaver.db.feature" />
+        <module name="org.jkiss.dbeaver.ext.oceanbase" />
+        <module name="org.jkiss.dbeaver.git.feature" />
+        <module name="org.jkiss.dbeaver.ext.firebird" />
+        <module name="org.jkiss.dbeaver.net.ssh" />
+        <module name="org.jkiss.dbeaver.ui.dashboard" />
+        <module name="org.jkiss.dbeaver.debug.feature" />
+        <module name="org.jkiss.dbeaver.app.base.feature" />
+        <module name="org.jkiss.dbeaver.dpi.app" />
+        <module name="org.jkiss.dbeaver.model.sql" />
+        <module name="org.jkiss.dbeaver.ext.hsqldb" />
+        <module name="org.jkiss.dbeaver.ui" />
+        <module name="org.jkiss.dbeaver.ext.sqlite" />
+        <module name="org.jkiss.dbeaver.model.ai" />
+        <module name="org.jkiss.dbeaver.ext.sample.database" />
+        <module name="org.jkiss.dbeaver.ui.editors.sql.ai" />
+        <module name="org.jkiss.dbeaver.data.transfer" />
+        <module name="org.jkiss.dbeaver.db.ui.feature" />
+        <module name="org.jkiss.dbeaver.ui.editors.acl" />
+        <module name="org.jkiss.dbeaver.ext.gaussdb.ui" />
+        <module name="org.jkiss.dbeaver.ext.tidb" />
+        <module name="org.jkiss.dbeaver.ext.mssql" />
+        <module name="org.jkiss.dbeaver.tasks.native" />
+        <module name="org.jkiss.dbeaver.slf4j" />
+        <module name="org.jkiss.dbeaver.ce.product.updateSite" />
+        <module name="org.jkiss.dbeaver.ext.bigquery.ui" />
+        <module name="org.jkiss.dbeaver.ce.office.updateSite" />
+        <module name="org.jkiss.dbeaver.ext.informix" />
+        <module name="org.jkiss.dbeaver.ui.editors.base" />
+        <module name="org.jkiss.dbeaver.ext.vertica" />
+        <module name="org.jkiss.dbeaver.headless" />
+        <module name="org.jkiss.dbeaver.ext.postgresql.debug.core" />
+        <module name="org.jkiss.dbeaver.ext.altibase.ui" />
+        <module name="org.jkiss.dbeaver.ext.wmi" />
+        <module name="org.jkiss.dbeaver.ext.es" />
+        <module name="org.jkiss.dbeaver.ext.dameng.ui" />
+        <module name="org.jkiss.dbeaver.ce.debug.updateSite" />
+        <module name="org.jkiss.dbeaver.ext.generic" />
+        <module name="org.jkiss.dbeaver.ext.netezza" />
+        <module name="org.jkiss.dbeaver.ce.git.updateSite" />
+        <module name="org.jkiss.dbeaver.net.ssh.sshj" />
+        <module name="org.jkiss.dbeaver.ext.vertica.ui" />
+        <module name="org.jkiss.dbeaver.ext.cubrid" />
+        <module name="org.jkiss.dbeaver.data.gis.view" />
+        <module name="org.jkiss.dbeaver.model.nio" />
+        <module name="org.jkiss.dbeaver.ext.postgresql.debug.ui" />
+        <module name="org.jkiss.dbeaver.ui.editors.data" />
+        <module name="org.jkiss.dbeaver.ext.db2" />
+        <module name="org.jkiss.dbeaver.data.gis" />
+        <module name="org.jkiss.dbeaver.net.ssh.jsch" />
+        <module name="org.jkiss.dbeaver.ext.exasol" />
+        <module name="org.jkiss.dbeaver.ext.h2gis" />
+        <module name="org.jkiss.dbeaver.ext.spanner" />
+        <module name="org.jkiss.dbeaver.model.sql.jdbc" />
+        <module name="org.jkiss.dbeaver.tasks.sql.ui" />
+        <module name="org.jkiss.dbeaver.ext.databricks" />
+        <module name="org.jkiss.dbeaver.test.platform" />
+        <module name="org.jkiss.dbeaver.ext.derby" />
+        <module name="org.jkiss.dbeaver.ext.ui.locks" />
+        <module name="org.jkiss.dbeaver.ext.altibase" />
+        <module name="org.jkiss.dbeaver.ui.editors.content" />
+        <module name="org.jkiss.dbeaver.ext.import_config" />
+        <module name="org.jkiss.dbeaver.ext.clickhouse" />
+        <module name="org.jkiss.dbeaver.ext.mysql" />
+        <module name="org.jkiss.dbeaver.ext.generic.ui" />
+        <module name="org.jkiss.dbeaver.ui.editors.session" />
+        <module name="org.jkiss.dbeaver.ext.office.feature" />
+        <module name="org.jkiss.dbeaver.runtime.feature" />
+        <module name="org.jkiss.dbeaver.rcp.feature" />
+        <module name="org.jkiss.dbeaver.ext.mssql.ui" />
+        <module name="appstore" />
+        <module name="org.jkiss.dbeaver.ext.athena" />
+        <module name="org.jkiss.dbeaver.ext.db2.zos" />
+        <module name="org.jkiss.dbeaver.ext.h2" />
+        <module name="org.jkiss.dbeaver.ext.oceanbase.ui" />
+        <module name="org.jkiss.dbeaver.ext.sqlite.ui" />
+        <module name="org.jkiss.dbeaver.ext.duckdb" />
+        <module name="org.jkiss.dbeaver.ui.editors.entity" />
+        <module name="org.jkiss.dbeaver.data.office.ui" />
+        <module name="org.jkiss.dbeaver.data.office" />
+        <module name="org.jkiss.dbeaver.debug.core" />
+        <module name="org.jkiss.dbeaver.ext.ui.tipoftheday" />
+        <module name="org.jkiss.dbeaver.tasks.native.ui" />
+        <module name="org.jkiss.dbeaver.ext.postgresql" />
+        <module name="org.jkiss.dbeaver.core" />
+        <module name="org.jkiss.dbeaver.ui.app.eclipse" />
+        <module name="org.jkiss.dbeaver.data.transfer.ui" />
+        <module name="org.jkiss.dbeaver.ui.app.winstore" />
+        <module name="org.jkiss.dbeaver.tasks.ui.view" />
+        <module name="org.jkiss.dbeaver.ui.editors.hex" />
+        <module name="org.jkiss.dbeaver.ui.app.standalone" />
+        <module name="org.jkiss.dbeaver.cmp.simple" />
+        <module name="org.jkiss.dbeaver.ui.editors.json" />
+        <module name="org.jkiss.dbeaver.ui.editors.xml" />
+      </profile>
+      <profile name="Annotation profile for dbeaver" enabled="true">
+        <sourceOutputDir name="../generated-sources/annotations" />
+        <sourceTestOutputDir name="../generated-test-sources/test-annotations" />
+        <module name="org.jkiss.dbeaver.ext.sqlite.test" />
+        <module name="org.jkiss.dbeaver.ext.snowflake.test" />
+        <module name="org.jkiss.dbeaver.ext.mysql.test" />
+        <module name="org.jkiss.dbeaver.ext.hana.test" />
+        <module name="org.jkiss.dbeaver.ext.postgresql.test" />
+        <module name="org.jkiss.dbeaver.model.lsm.test" />
+        <module name="org.jkiss.dbeaver.ext.altibase.test" />
+        <module name="org.jkiss.dbeaver.ext.clickhouse.test" />
+        <module name="org.jkiss.dbeaver.ext.greenplum.test" />
+        <module name="org.jkiss.dbeaver.ext.test" />
+        <module name="org.jkiss.dbeaver.ext.generic.test" />
+        <module name="org.jkiss.dbeaver.ext.oracle.test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bundles" target="17" />
+      <module name="org.jkiss.dbeaver.ce.svg.updateSite" target="17" />
+      <module name="org.jkiss.dbeaver.ext.elasticsearch" target="17" />
+      <module name="org.jkiss.dbeaver.ext.opendistro" target="17" />
+      <module name="org.jkiss.dbeaver.ext.ui.svg" target="17" />
+      <module name="org.jkiss.dbeaver.ext.ui.svg.feature" target="17" />
+      <module name="org.jkiss.dbeaver.ui.swt" target="17" />
+      <module name="org.jkiss.utils" target="17" />
+      <module name="org.jkiss.wmi" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

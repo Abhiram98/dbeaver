@@ -113,9 +113,13 @@ public class ERDConnectionRouterRegistry {
         }
         activeRouterDescriptor = getDescriptorById(store.getString(ERDUIConstants.PREF_ROUTING_TYPE));
         if (activeRouterDescriptor != null) {
-            return activeRouterDescriptor;
+            return isDefaultRouter();
         }
         activeRouterDescriptor = getDefaultDescriptor();
+        return activeRouterDescriptor;
+    }
+
+    private ERDConnectionRouterDescriptor isDefaultRouter() {
         return activeRouterDescriptor;
     }
 
