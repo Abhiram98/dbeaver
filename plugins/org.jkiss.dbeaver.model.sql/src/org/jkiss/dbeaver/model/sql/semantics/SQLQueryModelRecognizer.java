@@ -587,7 +587,7 @@ public class SQLQueryModelRecognizer {
                     if (n != null) {
                         STMTreeNode rn = n;
                         while (rn.getChildCount() == 1 && !knownRecognizableValueExpressionNames.contains(rn.getNodeName())) {
-                            rn = rn.getStmChild(0);
+                            rn = getFirstStmChild(rn);
                         }
                         if (knownRecognizableValueExpressionNames.contains(rn.getNodeName())
                             || rn.getNodeName().equals(STMKnownRuleNames.valueExpressionPrimary)
@@ -623,6 +623,11 @@ public class SQLQueryModelRecognizer {
                 return result;
             }
         }
+    }
+
+    private STMTreeNode getFirstStmChild(STMTreeNode rn) {
+        rn = rn.getStmChild(0);
+        return rn;
     }
 
     @NotNull
