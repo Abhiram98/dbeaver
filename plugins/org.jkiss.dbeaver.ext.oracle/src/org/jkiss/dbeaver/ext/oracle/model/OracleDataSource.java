@@ -966,6 +966,10 @@ public class OracleDataSource extends JDBCDataSource implements DBPObjectStatist
 
         @Override
         protected OracleSchema fetchObject(@NotNull JDBCSession session, @NotNull OracleDataSource owner, @NotNull JDBCResultSet resultSet) throws SQLException, DBException {
+            return createSchemaImpl(owner, resultSet);
+        }
+
+        private OracleSchema createSchemaImpl(org.jkiss.dbeaver.ext.oracle.model.OracleDataSource owner, JDBCResultSet resultSet) {
             return new OracleSchema(owner, resultSet);
         }
 
