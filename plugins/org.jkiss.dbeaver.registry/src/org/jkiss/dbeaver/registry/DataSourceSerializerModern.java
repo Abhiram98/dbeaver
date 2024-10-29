@@ -330,15 +330,19 @@ class DataSourceSerializerModern implements DataSourceSerializer
             return credBuffer.toString(StandardCharsets.UTF_8);
         } else {
             SecretKey localSecretKey = registry.getProject().getLocalSecretKey();
-            if (localSecretKey == null) {
-                throw new DBInterruptedException("Error of getting user credentials (operation was canceled)");
-            }
+            getValueEncryptor(localSecretKey);
             DBSValueEncryptor encryptor = new DefaultValueEncryptor(localSecretKey);
             try {
                 return new String(encryptor.decryptValue(credBuffer.toByteArray()), StandardCharsets.UTF_8);
             } catch (Exception e) {
                 throw new IOException("Error decrypting encrypted file", e);
             }
+        }
+    }
+
+    private void getValueEncryptor(SecretKey localSecretKey) throws DBInterruptedException {
+        if (localSecretKey == null) {
+            throw new DBInterruptedException("Error of getting user credentials (operation was canceled)");
         }
     }
 
