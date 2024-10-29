@@ -661,12 +661,16 @@ public class OracleSchema extends OracleGlobalObject implements
         {
             final String tableType = JDBCUtils.safeGetString(dbResult, OracleConstants.COLUMN_OBJECT_TYPE);
             if ("TABLE".equals(tableType)) {
-                return new OracleTable(session.getProgressMonitor(), owner, dbResult);
+                return createTableImpl(session, owner, dbResult);
             } else if ("MATERIALIZED VIEW".equals(tableType)) {
                 return new OracleMaterializedView(owner, dbResult);
             } else {
                 return new OracleView(owner, dbResult);
             }
+        }
+
+        private OracleTableBase createTableImpl(JDBCSession session, org.jkiss.dbeaver.ext.oracle.model.OracleSchema owner, JDBCResultSet dbResult) {
+            return new OracleTable(session.getProgressMonitor(), owner, dbResult);
         }
 
         @Override
